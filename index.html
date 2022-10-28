@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="https://images.vexels.com/media/users/3/128301/isolated/preview/fe90012ea3385f67494af00e2fb8a667-icone-de-hamburguer-amarelo-neon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css" >
+    
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url(/midia/combo.png);
+            background-color: rgb(237, 187, 248);
+            background-size: 120px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: auto;
+          
+        }
+    </style>
+
+    <title>Órbita Burguer</title>
+
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Meu burguer de outro planeta é...</h1>
+        <p id="subtitulo">Para iniciarmos, faça seu cadastro...</p>
+        <br>
+    </div>
+
+    <!--inicio do formulario-->
+
+<form>
+    <fieldset class="cadastro">
+
+        <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="texto" name="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="user">User</label>
+            <input type="texto" name="sobrenome" required>
+        </div>
+        
+        <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        </div>
+
+    </fieldset>
+
+    <div class="campo">
+        <label>Tipo de Burguer:</label>
+        <label>
+            <input type ="radio" name="burguer" value="artesanal"> Artesanal
+        </label>
+        <label>
+            <input type ="radio" name="burguer" value="podrao"> Podrão
+        </label>
+    </div>
+
+    <div class="campo">
+        <label><strong>Tipo de Blend</strong></label>
+        <label>
+            <input type ="radio" name="bland" value="Alto"> Alto
+        </label>
+        <label>
+            <input type ="radio" name="bland" value="smash"> Smash
+        </label>
+        <label>
+            <input type ="radio" name="bland" value="industrial"> Industrial
+        </label>
+    </div>
+
+    <div class="campo">
+        <label for="ponto"><strong>Tipo de Carne</strong></label>
+        <select id="pontoDaCarne" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Ponto -</option>
+            <option>Ponto +</option>
+            <option>Ao ponto</option>
+            <option>Bem Passado</option>
+        </select>
+    </div>
+
+    <div class="campo">
+        <label for="pao"><strong>Tipo de Pão</strong></label>
+        <select id="pao" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Australiano</option>
+            <option>Brioche</option>
+            <option>Pao de Batata</option>
+            <option>Ciabata</option>
+        </select>
+    </div>
+
+    <fieldset class="ingredientes">
+        <div class="campo">
+
+        <label><strong>Monte o seu burguer de outro planeta:</strong></label><br><br>
+           
+        <input type="checkbox" id="ingrediente1" nome="queijo" value="cheddar">
+        <label for="ingrediente1">Cheddar</label>
+
+        <input type="checkbox" id="ingrediente2" nome="queijo" value="mussarela">
+        <label for="ingrediente2">Mussarela</label>
+
+        <input type="checkbox" id="ingrediente3" nome="queijo" value="coalho">
+        <label for="ingrediente3">Coalho</label>
+
+        <input type="checkbox" id="ingrediente4" nome="contimento" value="cebola crisp">
+        <label for="ingrediente4">Cebola Crisp</label>
+
+        <input type="checkbox" id="ingrediente5" nome="bacon" value="bacon">
+        <label for="ingrediente5">Bacon</label>
+
+        <input type="checkbox" id="ingrediente6" nome="salada" value="tomate">
+        <label for="ingrediente6">Tomate</label>
+
+        <input type="checkbox" id="ingrediente7" nome="salada" value="alface">
+        <label for="ingrediente7">Alface</label>
+
+        <input type="checkbox" id="ingrediente8" nome="salada" value="pepino">
+        <label for="ingrediente8">Pepino</label>
+
+        <input type="checkbox" id="ingrediente9" nome="ovo" value="ovo">
+        <label for="ingrediente9">Ovo</label>
+
+        <input type="checkbox" id="ingrediente10" nome="presunto" value="presunto">
+        <label for="ingrediente10">Presunto</label>
+
+        <input type="checkbox" id="ingrediente11" nome="molho" value="maionese">
+        <label for="ingrediente11">Maionese Temperada</label>
+
+        <input type="checkbox" id="ingrediente12" nome="molho" value="barbecue">
+        <label for="ingrediente12">Barbecue</label>
+
+        <input type="checkbox" id="ingrediente13" nome="molho" value="mostarda">
+        <label for="ingrediente13">Mostarda</label>
+
+        <input type="checkbox" id="ingrediente14" nome="molho" value="pimenta">
+        <label for="ingrediente14">Geleia de Pimenta</label>
+
+        </div>
+    </fieldset>
+
+    <div class="campo">
+
+        <br>
+
+        <label> Seu top 3 hamburguerias é:</label>
+        <textarea rows="6" style="width: 26em" id="indicacoes" name="indicacoes"></textarea>    
+
+    </div>
+
+    <button class="botao" type="submit" onsubmit="">Concluir</button>
+
+        </form>
+    </body>
+</html>
